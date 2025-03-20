@@ -13,6 +13,7 @@ namespace Atividade02.Utils
             Color.SetColorPhraseDarkYellow(" -> Enter para entrar no jogo ");
             Console.ReadKey();
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
         }
 
         public static void MainMenu()
@@ -30,6 +31,7 @@ namespace Atividade02.Utils
         public static void Rules()
         {
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
             Color.SetColorPhraseBlue(" ===================================================");
             Color.SetColorPhraseBlue("                  Regras do jogo");
             Color.SetColorPhraseBlue(" ===================================================");
@@ -44,6 +46,7 @@ namespace Atividade02.Utils
             Console.ReadKey();
             Console.WriteLine();
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
             return;
         }
 
@@ -59,6 +62,7 @@ namespace Atividade02.Utils
         public static void RaceTitle(Player player1, Player player2)
         {
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
             Color.SetColorPhraseBlue(" =================================");
             Color.SetColorPhraseBlue("       A corrida vai começar!");
             Color.SetColorPhraseBlue(" =================================");
@@ -79,6 +83,7 @@ namespace Atividade02.Utils
             Color.SetColorPhraseDarkYellow(" -> Enter para sortear. ");
             Console.ReadKey();
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
             Color.SetColorPhraseBlue(" --------------- Boa Sorte! --------------- ");
             Console.WriteLine();
             Color.SetColorPhraseDarkGreen($" ->> {player} é o primeiro a jogar!");
@@ -86,6 +91,7 @@ namespace Atividade02.Utils
             Color.SetColorPhraseDarkYellow(" -> Enter para entrar no jogo ");
             Console.ReadKey();
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
         }
 
         public static void StartGameTitle()
@@ -202,6 +208,7 @@ namespace Atividade02.Utils
             Console.ReadKey();
             Console.WriteLine();
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
         }
 
         public static void Start()
@@ -211,6 +218,7 @@ namespace Atividade02.Utils
             Color.SetColorPhraseDarkYellow(" -> Enter para começar ");
             Console.ReadKey();
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
         }
 
         public static void WrongOption()
@@ -226,7 +234,7 @@ namespace Atividade02.Utils
         public static void Goodbye()
         {
             Console.Clear();
-            Console.WriteLine();
+            Console.WriteLine("\x1b[3J");
             Color.SetColorPhraseDarkCyan("---------------------");
             Color.SetColorPhraseDarkCyan(" Até a próxima!  0/ ");
             Color.SetColorPhraseDarkCyan("---------------------");

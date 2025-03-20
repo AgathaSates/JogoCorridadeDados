@@ -84,10 +84,12 @@ namespace Atividade02.Entities
         public static void UserName()
         {
             Console.Clear();
+            Console.WriteLine("\x1b[3J");
             string userName;
             while (true)
             {
                 Console.Clear();
+                Console.WriteLine("\x1b[3J");
                 Write.WriteUserName();
                 userName = Validators.IsValueName(Console.ReadLine());
                 Console.WriteLine();
@@ -138,7 +140,7 @@ namespace Atividade02.Entities
                         Color.SetColorPhraseDarkYellow(" -> Enter para rolar o dado.");
                         Console.ReadKey();
                         Console.Clear();
-                        Console.WriteLine();
+                        Console.WriteLine("\x1b[3J");
                         Color.SetColorPhraseYellow(" -> Sua vez: ");
                         gameover = Turn(user);
                         if (gameover == true)
@@ -165,7 +167,7 @@ namespace Atividade02.Entities
                         Color.SetColorPhraseDarkYellow(" -> Enter para rolar o dado.");
                         Console.ReadKey();
                         Console.Clear();
-                        Console.WriteLine();
+                        Console.WriteLine("\x1b[3J");
                         Color.SetColorPhraseYellow(" -> Sua vez: ");
                         gameover = Turn(user);
                     }
