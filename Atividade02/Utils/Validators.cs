@@ -30,12 +30,7 @@ namespace Atividade02.Utils
             while (string.IsNullOrEmpty(confirm) || confirm.ToLower() != "s" && confirm.ToLower() != "n")
             {
                 Write.WrongOption();
-                confirm = Console.ReadLine();
-                if (confirm == "s")
-                {
-                    break;
-                }
-
+                confirm = Console.ReadLine();               
             }
             return confirm.ToLower();
         }
